@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zamared Al Shabibi — Portfolio</title>
+<meta name="description" content="Software engineer, full-stack developer and UI/UX designer portfolio." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <span class="logo-bracket">&lt;</span>Zamared<span class="logo-bracket">/&gt;</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#certificates">certificates</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <a class="btn btn-ghost nav-cv" id="navResumeBtn" download>
+      <span>download cv</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3v13m0 0l-5-5m5 5l5-5M4 21h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow mono">$ whoami</p>
+      <h1 class="hero-name">Zamared<br/>Al Shabibi</h1>
+      <div class="hero-role mono">
+        <span class="prompt-char">&gt;</span>
+        <span id="roleTyped"></span><span class="cursor">▌</span>
+      </div>
+      <p class="hero-tagline">Software Engineering student building full-stack, AI-powered and mobile products.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a class="btn btn-ghost" id="heroResumeBtn" download>Download CV</a>
+      </div>
+      <div class="hero-stats mono">
+        <div class="stat"><span class="stat-num" id="statCerts">56</span><span class="stat-label">certificates</span></div>
+        <div class="stat"><span class="stat-num" id="statProjects">11</span><span class="stat-label">projects</span></div>
+        <div class="stat"><span class="stat-num" id="statSkills">20+</span><span class="stat-label">skills</span></div>
+      </div>
+    </div>
+
+    <div class="hero-terminal" aria-hidden="true">
+      <div class="terminal-bar">
+        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+        <span class="terminal-title mono">zamared@portfolio: ~</span>
+      </div>
+      <div class="terminal-body mono">
+        <p><span class="t-prompt">$</span> cat roles.json</p>
+        <p class="t-out">{</p>
+        <p class="t-out">&nbsp;&nbsp;"frontend":  "React, Redux, HTML/CSS",</p>
+        <p class="t-out">&nbsp;&nbsp;"backend":   "Node.js, FastAPI, PHP",</p>
+        <p class="t-out">&nbsp;&nbsp;"design":    "Figma, UX Research",</p>
+        <p class="t-out">&nbsp;&nbsp;"status":    "open_to_work"</p>
+        <p class="t-out">}</p>
+        <p><span class="t-prompt">$</span> <span class="t-blink">▌</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <p class="section-label mono">// 01 — about</p>
+  <div class="about-grid">
+    <p class="about-bio" id="aboutBio"></p>
+    <div class="about-meta mono">
+      <div class="meta-row"><span>location</span><span id="aboutLocation">—</span></div>
+      <div class="meta-row"><span>focus</span><span>frontend · backend · full-stack · UI/UX</span></div>
+      <div class="meta-row"><span>status</span><span class="status-open">available for opportunities</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section" id="skills">
+  <p class="section-label mono">// 02 — skills</p>
+  <h2 class="section-title">What I work with</h2>
+  <div class="skills-groups" id="skillsGroups"></div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section" id="projects">
+  <p class="section-label mono">// 03 — projects</p>
+  <div class="section-head">
+    <h2 class="section-title">Selected work</h2>
+    <div class="filter-bar mono" id="projectFilters"></div>
+  </div>
+  <div class="projects-grid" id="projectsGrid"></div>
+</section>
+
+<!-- ================= CERTIFICATES ================= -->
+<section class="section" id="certificates">
+  <p class="section-label mono">// 04 — certificates</p>
+  <div class="section-head">
+    <h2 class="section-title">Certifications <span class="count-badge mono" id="certCount">56</span></h2>
+    <div class="cert-controls">
+      <input type="text" id="certSearch" class="cert-search mono" placeholder="search certificates..." />
+      <div class="filter-bar mono" id="certFilters"></div>
+    </div>
+  </div>
+  <div class="cert-grid" id="certGrid"></div>
+  <p class="cert-empty mono" id="certEmpty" hidden>no certificates match your search.</p>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section section-contact" id="contact">
+  <p class="section-label mono">// 05 — contact</p>
+  <h2 class="section-title">Let's build something</h2>
+  <p class="contact-sub">Open to frontend, backend, full-stack and UI/UX opportunities.</p>
+  <div class="contact-links mono">
+    <a id="contactEmail" href="#" class="contact-link">email</a>
+    <a id="contactGithub" href="#" target="_blank" rel="noopener" class="contact-link">github</a>
+    <a id="contactLinkedin" href="#" target="_blank" rel="noopener" class="contact-link">linkedin</a>
+  </div>
+</section>
+
+<footer class="footer mono">
+  <span>&copy; <span id="year"></span> Zamared Al Shabibi</span>
+  <span>built without a database — edit data.js to update</span>
+</footer>
+
+<!-- Lightbox for certificate PDFs -->
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <h3 id="lightboxTitle" class="mono"></h3>
+    <p class="lightbox-hint mono" id="lightboxHint"></p>
+    <a id="lightboxOpen" class="btn btn-primary" target="_blank" rel="noopener">Open certificate PDF</a>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
