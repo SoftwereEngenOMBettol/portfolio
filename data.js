@@ -30,7 +30,7 @@ const profile = {
   email: "your.email@example.com", // TODO: replace with your real email
   github: "https://github.com/SoftwereEngenOMBettol",
   linkedin: "https://linkedin.com/in/your-profile", // TODO: replace
-  resumeFile: "assets/resume/resume.pdf", // drop your CV PDF here with this exact name
+  resumeFile: "assets/resume/Zamared_AlShabibi_CV.pdf", // drop your CV PDF here with this exact name
   location: "ALMudhaibi, Oman",
 };
 
@@ -247,7 +247,7 @@ const certificates = [
   { title: "University Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-workshop-6820816325.pdf" },
   { title: "AI for University Students (الذكاء الاصطناعي للطالب الجامعي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-ai-for-university-students.pdf" },
   { title: "Advanced 3D Part Modeling — AutoDesk Inventor", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-3d-modeling-inventor.pdf" },
-  { title: "Photography (التصوير الفوتوغرافي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-photography.pdf" },
+  { title: "Photography (التصوير الفوتوغرافي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/photography.pdf" },
   { title: "GIMP — Open Source Image Editor", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-gimp.pdf" },
   { title: "Oman Vision 2040 Research Alignment", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-oman-vision-2040-research.pdf" },
   { title: "Transformers Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-transformers-workshop.pdf" },
