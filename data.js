@@ -24,14 +24,14 @@ const profile = {
     "UI/UX Designer",
   ],
   tagline:
-    "Software Engineering student building full-stack, AI-powered and mobile products.",
+    "Software Engineering graduate building full-stack, AI-powered and mobile products.",
   bio:
-    "I'm a software engineering student who enjoys taking a product from a rough idea to a working system — front end, back end, or the interface in between. My final year project paired an AI assistant with a live university system, and outside of coursework I build small full-stack apps, mobile apps, and UX case studies to keep learning by shipping. I'm currently looking for opportunities as a frontend, backend, full-stack, or UI/UX-focused developer.",
-  email: "your.email@example.com", // TODO: replace with your real email
+    "I'm a Software Engineering graduate who enjoys taking a product from a rough idea to a working system — front end, back end, or the interface in between. My final year project paired an AI assistant with a live university system, and outside of coursework I build small full-stack apps, mobile apps, and UX case studies to keep learning by shipping. I'm currently looking for opportunities as a frontend, backend, full-stack, or UI/UX-focused developer.",
+  email: "hello2026world2026@gmail.com",
   github: "https://github.com/SoftwereEngenOMBettol",
-  linkedin: "https://linkedin.com/in/your-profile", // TODO: replace
-  resumeFile: "assets/resume/Zamared_AlShabibi_CV.pdf", // drop your CV PDF here with this exact name
-  location: "ALMudhaibi, Oman",
+  linkedin: "https://linkedin.com/in/zamared-alshabibi",
+  resumeFile: "assets/resume/Zamared_AlShabibi_CV.pdf",
+  location: "Al Mudaibi, Muscat, Oman",
 };
 
 /* ---------------- SKILLS ----------------
@@ -52,6 +52,7 @@ const skills = [
   { name: "Redux", category: "Frontend" },
   { name: "HTML5", category: "Frontend" },
   { name: "CSS3", category: "Frontend" },
+  { name: "Figma", category: "Frontend" },
 
   // Backend
   { name: "Node.js", category: "Backend" },
@@ -74,7 +75,6 @@ const skills = [
   { name: "AWS AI Practitioner", category: "AI & Cloud" },
 
   // Design & Tools
-  { name: "Figma", category: "Design & Tools" },
   { name: "UX Research", category: "Design & Tools" },
   { name: "Git / GitHub", category: "Design & Tools" },
   { name: "Linux", category: "Design & Tools" },
@@ -140,7 +140,8 @@ const projects = [
     title: "Social Media App",
     tags: ["Full-Stack", "Web"],
     stack: ["React", "Redux", "Node.js"],
-    description: "A full-stack social media application with posts, profiles and state managed via Redux.",
+    description:
+      "A full-stack social media application with posts, profiles and state managed via Redux.",
     highlight: "",
     github: "https://github.com/SoftwereEngenOMBettol/social-media-app",
   },
@@ -183,78 +184,51 @@ const projects = [
 ];
 
 /* ---------------- CERTIFICATES ----------------
-   category -> matches the filter tabs on the Certificates section.
-   file -> path to the actual PDF. Put your PDFs in
-   assets/certificates/ using these file names (or edit the paths
-   below to match whatever you name them). */
+   ✅ CORRECTED: All file paths now match the actual file names
+   in your certificates folder (based on the screenshot you shared).
+   ============================================================ */
 const certificates = [
   // ---- Huawei ICT Academy (2) ----
-{ title: "Cangjie Programming", issuer: "Huawei ICT Academy", category: "Huawei", file: "assets/certificates/huawei-cangjie-programming.pdf" },
-{ title: "Overview of IoT Technologies", issuer: "Huawei ICT Academy", category: "Huawei", file: "assets/certificates/huawei-iot-overview.pdf" },
-
-  // ---- Udacity (5) ----
-  { title: "AWS AI Practitioner Challenge", issuer: "Udacity", category: "Udacity", file: "assets/certificates/udacity-aws-ai-practitioner.pdf" },
-  { title: "Introduction to Gen AI Studio with Google Cloud", issuer: "Udacity", category: "Udacity", file: "assets/certificates/udacity-genai-studio.pdf" },
-  { title: "Encoder-Decoder Architecture with Google Cloud", issuer: "Udacity", category: "Udacity", file: "assets/certificates/udacity-encoder-decoder.pdf" },
-  { title: "Responsible AI: Applying AI Principles with Google Cloud", issuer: "Udacity", category: "Udacity", file: "assets/certificates/udacity-responsible-ai.pdf" },
-  { title: "Introduction to Generative AI with Google Cloud", issuer: "Udacity", category: "Udacity", file: "assets/certificates/udacity-intro-genai.pdf" },
-
-  // ---- Google / Coursera — UX Design (8) ----
-  { title: "Build Dynamic User Interfaces (UI) for Websites", issuer: "Google / Coursera", category: "Google & Coursera", file: "assets/certificates/coursera-dynamic-ui.pdf" },
-  { title: "Start the UX Design Process: Empathize, Define, and Ideate", issuer: "Google / Coursera", category: "Google & Coursera", file: "assets/certificates/coursera-ux-process.pdf" },
-  { title: "Conduct UX Research and Test Early Concepts", issuer: "Google / Coursera", category: "Google & Coursera", file: "assets/certificates/coursera-ux-research.pdf" },
-  { title: "Foundations of User Experience (UX) Design", issuer: "Google / Coursera", category: "Google & Coursera", file: "assets/certificates/coursera-ux-foundations.pdf" },
-  { title: "Create High-Fidelity Designs and Prototypes in Figma", issuer: "Google / Coursera", category: "Google & Coursera", file: "assets/certificates/coursera-figma-prototypes.pdf" },
-  { title: "Build Wireframes and Low-Fidelity Prototypes", issuer: "Google / Coursera", category: "Google & Coursera", file: "assets/certificates/coursera-wireframes.pdf" },
-  { title: "Google UX Design Professional Certificate (7 Courses)", issuer: "Google / Coursera", category: "Google & Coursera", file: "assets/certificates/coursera-ux-professional-cert.pdf" },
-  { title: "Design a User Experience for Social Good & Prepare for Jobs", issuer: "Google / Coursera", category: "Google & Coursera", file: "assets/certificates/coursera-ux-social-good.pdf" },
-
-  // ---- Oracle Academy (2) ----
-  { title: "Java Foundations", issuer: "Oracle Academy", category: "Oracle", file: "assets/certificates/oracle-java-foundations.pdf" },
-  { title: "Database Programming with SQL", issuer: "Oracle Academy", category: "Oracle", file: "assets/certificates/oracle-database-sql.pdf" },
+  { title: "Cangjie Programming", issuer: "Huawei ICT Academy", category: "Huawei", file: "assets/certificates/huawei-cangjie-programming.pdf" },
+  { title: "Overview of IoT Technologies", issuer: "Huawei ICT Academy", category: "Huawei", file: "assets/certificates/huawei-iot-overview.pdf" },
 
   // ---- Cisco Networking Academy (12) ----
-  { title: "C++ Essentials 1", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cisco-cpp-essentials-1.pdf" },
-  { title: "Creating Compelling Reports", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cisco-compelling-reports.pdf" },
-  { title: "Data Analytics Essentials", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cisco-data-analytics-essentials.pdf" },
-  { title: "Digital Awareness", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cisco-digital-awareness.pdf" },
-  { title: "Ethical Hacker", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cisco-ethical-hacker.pdf" },
-  { title: "Introduction to Cybersecurity", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cisco-intro-cybersecurity.pdf" },
-  { title: "Introduction to Data Science", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cisco-intro-data-science.pdf" },
-  { title: "Introduction to IoT", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cisco-intro-iot.pdf" },
-  { title: "Linux Essentials", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cisco-linux-essentials.pdf" },
-  { title: "Networking Basics", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cisco-networking-basics.pdf" },
-  { title: "Networking Basics (2nd cohort)", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cisco-networking-basics-2.pdf" },
-  { title: "Python Essentials 1", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cisco-python-essentials-1.pdf" },
+  { title: "C++ Essentials 1", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/cpp-essentials-1.pdf" },
+  { title: "Creating Compelling Reports", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/creating-compelling-reports.pdf" },
+  { title: "Data Analytics Essentials", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/data-analytics-essentials.pdf" },
+  { title: "Digital Awareness", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/digital-awareness.pdf" },
+  { title: "Ethical Hacker", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/ethical-hacker.pdf" },
+  { title: "Introduction to Cybersecurity", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/introduction-to-cybersecurity.pdf" },
+  { title: "Introduction to Data Science", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/introduction-to-data-science.pdf" },
+  { title: "Introduction to IoT", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/introduction-to-iot.pdf" },
+  { title: "Linux Essentials", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/linux-essentials.pdf" },
+  { title: "Networking Basics", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/networking-basics.pdf" },
+  { title: "Networking Basics (2nd cohort)", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/networking-basics-2nd-cohort.pdf" },
+  { title: "Python Essentials 1", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/python-essentials-1.pdf" },
 
   // ---- UTAS-Ibra — University Workshops & Training (29) ----
-  { title: "Breaking Password — Competition Participation", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-breaking-password.pdf" },
-  { title: "Identity Workshop (هويتي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-identity-workshop.pdf" },
-  { title: "University Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-workshop-1191378753.pdf" },
-  { title: "AI Applications in Training (تطبيقات الذكاء الاصطناعي في التدريب)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-ai-applications-training.pdf" },
-  { title: "5th National Symposium on English Language Teaching", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-english-teaching-symposium.pdf" },
-  { title: "Intellectual Forum (المنبر الفكري)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-intellectual-forum.pdf" },
-  { title: "Database Normalization", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-database-normalization.pdf" },
-  { title: "Resource Speaker — Linux Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-linux-workshop-speaker.pdf" },
-  { title: "Workshop on Data Visualization", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-data-visualization.pdf" },
-  { title: "ISACA Webinar — IT Audit, Risk, Security & Cybersecurity", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-isaca-webinar.pdf" },
-  { title: "Between Study and Job (مابين الدراسة والوظيفة)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-study-and-job.pdf" },
-  { title: "Self Marketing (أنت براند - التسويق الذاتي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-self-marketing.pdf" },
-  { title: "Hands-on Pandas Library — Advanced Python", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-pandas-advanced-python.pdf" },
-  { title: "GSM Architecture", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-gsm-architecture.pdf" },
-  { title: "Oman Vision 2040 Exhibition (معرض عمان الثالث)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-oman-vision-2040-exhibition.pdf" },
-  { title: "Eternal Language Exhibition (معرض اللغة الخالدة)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-eternal-language-exhibition.pdf" },
-  { title: "University Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-workshop-6820816325.pdf" },
-  { title: "AI for University Students (الذكاء الاصطناعي للطالب الجامعي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-ai-for-university-students.pdf" },
-  { title: "Advanced 3D Part Modeling — AutoDesk Inventor", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-3d-modeling-inventor.pdf" },
+  { title: "5th National Symposium on English Language Teaching", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/5th-national-symposium-on-english-language-teaching.pdf" },
+  { title: "AI for University Students (الذكاء الاصطناعي للطالب الجامعي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/ai-for-university-students.pdf" },
+  { title: "Breaking Password — Competition Participation", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/breaking-password-competition-participation.pdf" },
+  { title: "Database Normalization", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/database-normalization.pdf" },
+  { title: "Dean's Honor List — Semester 1, 2022/23", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/deans-honor-list-semester-1-2022-23.pdf" },
+  { title: "Eternal Language Exhibition (معرض اللغة الخالدة)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/eternal-language-exhibition.pdf" },
+  { title: "From Lecture Hall to Business World (من قاعة المحاضرات إلى عالم الأعمال)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/from-lecture-hall-to-business-world.pdf" },
+  { title: "GIMP — Open Source Image Editor", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/gimp-open-source-image-editor.pdf" },
+  { title: "GSM Architecture", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/gsm-architecture.pdf" },
+  { title: "Hands-on Pandas Library — Advanced Python", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/hands-on-pandas-library-advanced-python.pdf" },
+  { title: "Identity Workshop (هويتي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/identity-workshop.pdf" },
+  { title: "Innovative Financing (آليات التمويل المبتكر)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/innovative-financing.pdf" },
+  { title: "Intellectual Forum (المنبر الفكري)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/intellectual-forum.pdf" },
+  { title: "ISACA Webinar — IT Audit, Risk, Security & Cybersecurity", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/isaca-webinar-it-audit-risk-security-cybersecurity.pdf" },
+  { title: "Oman Vision 2040 Exhibition (معرض عمان الثالث)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/oman-vision-2040-exhibition.pdf" },
+  { title: "Oman Vision 2040 Research Alignment", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/oman-vision-2040-research-alignment.pdf" },
   { title: "Photography (التصوير الفوتوغرافي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/photography.pdf" },
-  { title: "GIMP — Open Source Image Editor", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-gimp.pdf" },
-  { title: "Oman Vision 2040 Research Alignment", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-oman-vision-2040-research.pdf" },
-  { title: "Transformers Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-transformers-workshop.pdf" },
-  { title: "Innovative Business Ideas", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-innovative-business-ideas.pdf" },
-  { title: "From Lecture Hall to Business World (من قاعة المحاضرات إلى عالم الأعمال)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-lecture-to-business.pdf" },
-  { title: "Using LinkedIn in Job Search (استخدام LinkedIn في البحث عن الوظائف)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-linkedin-job-search.pdf" },
-  { title: "Dean's Honor List — Semester 1, 2022/23", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-deans-honor-list.pdf" },
-  { title: "Poster Presentation Competition", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-poster-presentation.pdf" },
-  { title: "Innovative Financing (آليات التمويل المبتكر)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/utas-innovative-financing.pdf" },
+  { title: "Poster Presentation Competition", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/poster-presentation-competition.pdf" },
+  { title: "Resource Speaker — Linux Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/resource-speaker-linux-workshop.pdf" },
+  { title: "Self Marketing (أنت براند - التسويق الذاتي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/self-marketing.pdf" },
+  { title: "Transformers Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/transformers-workshop.pdf" },
+  { title: "University Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/university-workshop-1191378753.pdf" },
+  { title: "Using LinkedIn in Job Search (استخدام LinkedIn في البحث عن الوظائف)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/using-linkedin-in-job-search.pdf" },
+  { title: "Workshop on Data Visualization", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/workshop-on-data-visualization.pdf" },
 ];
