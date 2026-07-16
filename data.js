@@ -27,7 +27,7 @@ const profile = {
     "Software Engineering graduate building full-stack, AI-powered and mobile products.",
   bio:
     "I'm a Software Engineering graduate who enjoys taking a product from a rough idea to a working system — front end, back end, or the interface in between. My final year project paired an AI assistant with a live university system, and outside of coursework I build small full-stack apps, mobile apps, and UX case studies to keep learning by shipping. I'm currently looking for opportunities as a frontend, backend, full-stack, or UI/UX-focused developer.",
-  email: "hello2026world2026@gmail.com",
+  email: "zumurudalshabibi@gmail.com",
   github: "https://github.com/SoftwereEngenOMBettol",
   linkedin: "https://linkedin.com/in/zamared-alshabibi",
   resumeFile: "assets/resume/Zamared_AlShabibi_CV.pdf",
