@@ -1,6 +1,7 @@
 # Zamared Al Shabibi — Portfolio
 
-A static portfolio site. No database, no backend, no build step —
+A static portfolio site--> https://softwereengenombettol.github.io/portfolio/
+No database, no backend, no build step —
 just HTML, CSS and JavaScript.
 
 ## Files
