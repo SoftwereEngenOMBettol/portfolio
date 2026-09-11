@@ -213,14 +213,14 @@ const certificates = [
   { title: "How to Start and Manage a Successful Business", issuer: "Edraak", category: "Edraak", file: "assets/certificates/edraak/start-manage-business.pdf" },
   // ---- Huawei ICT Academy (2) ----
   { title: "Cangjie Programming", issuer: "Huawei ICT Academy", category: "Huawei", file: "assets/certificates/Cangjie Programming.png" },
-  { title: "Overview of IoT Technologies", issuer: "Huawei ICT Academy", category: "Huawei", file: "assets/certificates/Overview of IoT Technologies.png" },
+  { title: "Overview of IoT Technologies", issuer: "Huawei ICT Academy", category: "Huawei", file: "assets/certificates/huawei-iot-overview.pdf" },
 
   // ---- Udacity (5) ----
-  { title: "AWS AI Practitioner Challenge", issuer: "Udacity", category: "Udacity", file: "assets/certificates/Learn the Latest Tech Skills; Advance Your Career  Udacity.pdf" , featured: true },
-  { title: "Introduction to Gen AI Studio with Google Cloud", issuer: "Udacity", category: "Udacity", file: "assets/certificates/learn.udacity.pdf" },
-  { title: "Encoder-Decoder Architecture with Google Cloud", issuer: "Udacity", category: "Udacity", file: "assets/certificates/Udacity.pdf" },
-  { title: "Responsible AI: Applying AI Principles with Google Cloud", issuer: "Udacity", category: "Udacity", file: "assets/certificates/udacity2.pdf" },
-  { title: "Introduction to Generative AI with Google Cloud", issuer: "Udacity", category: "Udacity", file: "assets/certificates/udacity3.pdf" , featured: true },
+  { title: "AWS AI Practitioner Challenge", issuer: "Udacity", category: "Udacity", file: "assets/certificates/udacity/aws-ai-practitioner.pdf" , featured: true },
+  { title: "Introduction to Gen AI Studio with Google Cloud", issuer: "Udacity", category: "Udacity", file: "assets/certificates/udacity/gen-ai-studio-google-cloud.pdf" },
+  { title: "Encoder-Decoder Architecture with Google Cloud", issuer: "Udacity", category: "Udacity", file: "assets/certificates/udacity/encoder-decoder-architecture.pdf" },
+  { title: "Responsible AI: Applying AI Principles with Google Cloud", issuer: "Udacity", category: "Udacity", file: "assets/certificates/udacity/responsible-ai.pdf" },
+  { title: "Introduction to Generative AI with Google Cloud", issuer: "Udacity", category: "Udacity", file: "assets/certificates/udacity/intro-generative-ai.pdf" , featured: true },
 
   // ---- Cisco Networking Academy (12) ----
   { title: "C++ Essentials 1", issuer: "Cisco Networking Academy", category: "Cisco", file: "assets/certificates/C--_Essentials_1_certificate_36s2023-utas-edu-om_85019036-c4f5-4f8e-8f83-15041123fc15.pdf" , featured: true },
@@ -239,9 +239,12 @@ const certificates = [
   // ---- UTAS-Ibra — University Workshops & Training (29) ----
   { title: "5th National Symposium on English Language Teaching", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/1383607954ZA.pdf" },
   { title: "AI for University Students (الذكاء الاصطناعي للطالب الجامعي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/6838110622ZA.pdf" },
-  { title: "AI Applications in Training (تطبيقات الذكاء الاصطناعي في التدريب)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/1316981026ZA[1].pdf" },
-  { title: "Advanced 3D Part Modeling — AutoDesk Inventor", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/7062889741ZA[1].pdf" },
-  { title: "Between Study and Job (مابين الدراسة والوظيفة)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/4776185608ZA[1].pdf" },
+  // TODO missing file — re-upload the PDF, then uncomment this line:
+  //  { title: "AI Applications in Training (تطبيقات الذكاء الاصطناعي في التدريب)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/1316981026ZA[1].pdf" },
+  // TODO missing file — re-upload the PDF, then uncomment this line:
+  //  { title: "Advanced 3D Part Modeling — AutoDesk Inventor", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/7062889741ZA[1].pdf" },
+  // TODO missing file — re-upload the PDF, then uncomment this line:
+  //  { title: "Between Study and Job (مابين الدراسة والوظيفة)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/4776185608ZA[1].pdf" },
   { title: "Breaking Password — Competition Participation", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/36s2023 Certificate of Participation_Breaking Password_04-12-2023 4.pdf" },
   { title: "Database Normalization", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/2960888539ZA.pdf" },
   { title: "Dean's Honor List — Semester 1, 2022/23", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/Dean's Honor List Certificate_Sem 1_2022-23 50.pdf" , featured: true },
@@ -251,8 +254,9 @@ const certificates = [
   { title: "GSM Architecture", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/5847798362ZA.pdf" },
   { title: "Hands-on Pandas Library — Advanced Python", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/5379022054ZA.pdf" , featured: true },
   { title: "Identity Workshop (هويتي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/0289680785ZA.pdf" },
-  { title: "Innovative Business Ideas", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/8984417418ZA[1].pdf" },
-  { title: "Innovative Financing (آليات التمويل المبتكر)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/شهاده مشاركه.jpg" },
+  // TODO missing file — re-upload the PDF, then uncomment this line:
+  //  { title: "Innovative Business Ideas", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/8984417418ZA[1].pdf" },
+  { title: "Innovative Financing (آليات التمويل المبتكر)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/innovative-financing.jpg" },
   { title: "Intellectual Forum (المنبر الفكري)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/1650860714ZA.pdf" },
   { title: "ISACA Webinar — IT Audit, Risk, Security & Cybersecurity", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/4768365696ZA.pdf" },
   { title: "Oman Vision 2040 Exhibition (معرض عمان الثالث)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/6230588739ZA.pdf" },
@@ -263,7 +267,8 @@ const certificates = [
   { title: "Self Marketing (أنت براند - التسويق الذاتي)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/5122766001ZA.pdf" },
   { title: "Transformers Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/8751174199ZA.pdf" },
   { title: "University Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/1191378753ZA.pdf" },
-  { title: "University Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/6820816325ZA[1].pdf" },
+  // TODO missing file — re-upload the PDF, then uncomment this line:
+  //  { title: "University Workshop", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/6820816325ZA[1].pdf" },
   { title: "Using LinkedIn in Job Search (استخدام LinkedIn في البحث عن الوظائف)", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/9729757156ZA.pdf" },
   { title: "Workshop on Data Visualization", issuer: "UTAS-Ibra", category: "University", file: "assets/certificates/4122692113ZA.pdf" },
 ];
