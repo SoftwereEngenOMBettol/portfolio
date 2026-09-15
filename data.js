@@ -30,7 +30,7 @@ const profile = {
   email: "zumurudalshabibi@gmail.com",
   github: "https://github.com/SoftwereEngenOMBettol",
   linkedin: "https://linkedin.com/in/zamared-alshabibi",
-  resumeFile: "assets/resume/Zamared_AlShabibi_CV.pdf",
+  resumeFile: "assets/resume/ZAMAERD_ALSHBIBI_CV.pdf",
   location: "Al Mudaibi, Muscat, Oman",
 };
 
