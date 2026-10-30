@@ -7,7 +7,7 @@
 <meta name="description" content="Software engineer, full-stack developer and UI/UX designer portfolio." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=freelance21-20261031b" />
+<link rel="stylesheet" href="style.css?v=runtimefix-20261031-1" />
 </head>
 <body>
 
@@ -76,6 +76,8 @@
     </div>
   </div>
 </section>
+
+<p id="runtimeStatus" class="runtime-status mono" role="status" hidden></p>
 
 <!-- ================= ABOUT ================= -->
 <section class="section" id="about">
@@ -159,7 +161,20 @@
   </div>
 </div>
 
-<script src="data.js?v=freelance21-20261031b"></script>
-<script src="script.js?v=freelance21-20261031b"></script>
+<script>
+  // Show an on-page warning if a script fails before the page can render.
+  window.addEventListener("error", (event) => {
+    const failedScript = event.target && event.target.tagName === "SCRIPT";
+    if (!failedScript && !event.message) return;
+    const status = document.getElementById("runtimeStatus");
+    if (status) {
+      status.hidden = false;
+      status.textContent =
+        "The portfolio scripts did not load correctly. Refresh the page; if it continues, share the first browser-console error.";
+    }
+  }, true);
+</script>
+<script src="data.js?v=runtimefix-20261031-1"></script>
+<script src="script.js?v=runtimefix-20261031-1"></script>
 </body>
 </html>
