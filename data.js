@@ -131,6 +131,15 @@ const projects = [
   },
 
   {
+    title: "Online Library Books",
+    tags: ["Full-Stack", "Web"],
+    stack: ["MongoDB", "Express", "React", "Node.js"],
+    description:
+      "Full-stack MERN application for managing an online library, including book records and borrowing.",
+    highlight: "",
+    github: "https://github.com/SoftwereEngenOMBettol/onlineLibraryBooks",
+  },
+  {
     title: "Social Media App",
     tags: ["Full-Stack", "Web"],
     stack: ["React", "Redux", "Node.js"],
@@ -141,6 +150,15 @@ const projects = [
   },
 
   {
+    title: "Caffeine — Cafe Shop Website",
+    tags: ["Web"],
+    stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    description:
+      "A complete e-commerce platform for a coffee shop: user registration, an automated ordering pipeline, and an admin panel.",
+    highlight: "",
+    github: "",
+  },
+  {
     title: "QUTAS — University Queue Management System",
     tags: ["Web", "Systems"],
     stack: ["PHP", "MySQL", "HTML", "CSS"],
@@ -150,6 +168,15 @@ const projects = [
     github: "",
   },
 
+  {
+    title: "Tablet Store — E-commerce App",
+    tags: ["Mobile"],
+    stack: ["Flutter", "Dart", "Firebase Firestore", "Firebase Auth"],
+    description:
+      "Cross-platform mobile app for tablet sales, with an interactive shopping cart, secure checkout, and persistent order history.",
+    highlight: "",
+    github: "",
+  },
   {
     title: "Electronic Store System — UX Design",
     tags: ["UI/UX"],
@@ -163,45 +190,198 @@ const projects = [
 
 
 /* ---------------- FREELANCE CLIENT PROJECTS ----------------
-   Related commerce builds are grouped together to keep the
-   client-work section focused without counting either project twice.
+   Each item is one client engagement. coverIndex selects its
+   matching thumbnail from assets/freelance/project-thumbnails.webp.
    ---------------------------------------------------------- */
 const freelanceProjects = [
   {
-    title: "Commerce & Retail Applications",
-    tags: ["E-commerce", "Web", "Mobile"],
-    cases: [
-      {
-        title: "Caffeine — Cafe Shop Website",
-        clientNeed:
-          "The cafe needed an online ordering channel so customers could place requests without relying on a manual, staff-handled process.",
-        delivered:
-          "Built a web-based ordering experience with customer registration, an automated order workflow, and an admin panel for managing the service.",
-        stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
-      },
-      {
-        title: "Tablet Store Mobile App",
-        clientNeed:
-          "The retailer needed a mobile storefront for presenting tablet products, managing the catalogue, and giving customers a straightforward shopping flow.",
-        delivered:
-          "Built a Flutter app with Firebase sign-up and login, a Firestore-backed product catalogue, admin product management, a shopping cart, checkout flow, and purchase history.",
-        stack: ["Flutter", "Dart", "Firebase Auth", "Cloud Firestore"],
-      },
-    ],
+    coverIndex: 1,
+    title: "AI Recommendation Engine",
+    category: "AI & Data",
+    tags: ["Machine Learning", "Personalization"],
+    clientNeed: "The client wanted to help users discover relevant films, books, or products without having to search through large catalogues manually.",
+    delivered: "Designed a hybrid recommendation approach that combines collaborative filtering with content-based matching, using rating and item information to produce more relevant suggestions.",
+    stack: ["Python", "Pandas", "NumPy", "Scikit-learn", "MovieLens", "Goodreads"],
   },
   {
-    title: "Library Management Portal",
-    tags: ["Full-Stack", "Web", "Management System"],
-    cases: [
-      {
-        title: "Online Library Books",
-        clientNeed:
-          "The library needed a public website where visitors could explore its book catalogue, alongside an admin area to keep book records up to date.",
-        delivered:
-          "Built a React-based library website with book listings, admin sign-in, add/edit/manage book workflows, and a Node.js/Express API connected to MongoDB.",
-        stack: ["React", "Node.js", "Express", "MongoDB"],
-      },
-    ],
+    coverIndex: 2,
+    title: "AI-Powered University Assistant",
+    category: "Web & Systems",
+    tags: ["AI Assistant", "Bilingual", "Education"],
+    clientNeed: "The university needed a bilingual assistant that could answer students' everyday questions using their actual academic records rather than generic answers.",
+    delivered: "Built an Arabic/English assistant connected to the CIMS environment, with authenticated student access to GPA, schedules and attendance, plus an admin dashboard, usage analytics, FAQ support and PDF reports.",
+    stack: ["React", "FastAPI", "Gemini 2.5 Flash", "PostgreSQL", "JWT"],
+  },
+  {
+    coverIndex: 3,
+    title: "QUTAS — University Queue Management",
+    category: "Web & Systems",
+    tags: ["Queue Management", "Administration"],
+    clientNeed: "Student Affairs needed a clearer way to manage student waiting lines and reduce the need for students to stand in a crowded corridor just to follow their turn.",
+    delivered: "Developed a virtual ticketing and queue-status experience with a live view of the waiting list and an administrative interface for managing the service.",
+    stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    coverIndex: 4,
+    title: "Online Library Management Portal",
+    category: "Web & Systems",
+    tags: ["Full-Stack", "Library"],
+    clientNeed: "The client wanted a public-facing library catalogue and a simple way for staff to maintain book records.",
+    delivered: "Built a MERN-based portal with book browsing, an administrator sign-in area, and create, edit and manage workflows backed by a Node/Express API and MongoDB.",
+    stack: ["React", "Node.js", "Express", "MongoDB"],
+  },
+  {
+    coverIndex: 5,
+    title: "Tablet Store — Mobile Commerce App",
+    category: "Web & Systems",
+    tags: ["Mobile App", "E-commerce"],
+    clientNeed: "The retailer wanted customers to browse tablet products and complete purchases through a dedicated mobile shopping experience.",
+    delivered: "Created a Flutter shopping app with customer authentication, a Firestore-backed catalogue, product administration, cart and checkout flows, and purchase history.",
+    stack: ["Flutter", "Dart", "Firebase Auth", "Cloud Firestore"],
+  },
+  {
+    coverIndex: 6,
+    title: "Online Courses Website",
+    category: "Web & Systems",
+    tags: ["Website", "Education"],
+    clientNeed: "The training provider needed a simple website to introduce its courses, help visitors browse available options and collect enrolment or payment details.",
+    delivered: "Designed a multi-page course website covering the home page, course catalogue and payment/enrolment form.",
+    stack: ["HTML", "CSS", "Web Design"],
+  },
+  {
+    coverIndex: 7,
+    title: "Weather Prediction Using Machine Learning",
+    category: "AI & Data",
+    tags: ["Prediction", "Machine Learning"],
+    clientNeed: "The client wanted to estimate the likelihood of rain from historical weather measurements and make the prediction process accessible through a simple interface.",
+    delivered: "Prepared weather data, trained and compared MLP and SVM classifiers, saved the model assets and built a Gradio interface for entering weather conditions and viewing predictions.",
+    stack: ["Python", "Pandas", "Scikit-learn", "MLP", "SVM", "Gradio"],
+  },
+  {
+    coverIndex: 8,
+    title: "Store Sales Forecasting & Analysis",
+    category: "AI & Data",
+    tags: ["Data Analysis", "Forecasting"],
+    clientNeed: "The business needed to understand which products, regions, discounts and customer segments were influencing sales and profitability.",
+    delivered: "Performed exploratory analysis, prepared visual summaries of sales and profit patterns, and explored regression-based forecasting using the supplied sales dataset.",
+    stack: ["Python", "Pandas", "Data Visualization", "Linear Regression"],
+  },
+  {
+    coverIndex: 9,
+    title: "Online Shopping Database Design",
+    category: "Web & Systems",
+    tags: ["Database", "SQL"],
+    clientNeed: "The client needed a structured database foundation for an online shopping workflow, with reliable relationships between customers, orders and related records.",
+    delivered: "Designed the relational schema and documented SQL table creation, data insertion and query operations with data-integrity considerations.",
+    stack: ["SQL", "Relational Database Design"],
+  },
+  {
+    coverIndex: 10,
+    title: "Future Home — Rental Cost Calculator",
+    category: "Web & Systems",
+    tags: ["Python", "Automation"],
+    clientNeed: "The client wanted a quick way to estimate rental costs based on property features and the tenant's preferences.",
+    delivered: "Created a Python calculator that factors in property type, view, neighbourhood noise, furniture, rental duration and payment option to calculate the expected rent.",
+    stack: ["Python", "Jupyter Notebook"],
+  },
+  {
+    coverIndex: 11,
+    title: "Blockchain Bus Reservation Model",
+    category: "Web & Systems",
+    tags: ["Blockchain", "System Design"],
+    clientNeed: "The client wanted to explore how a bus reservation process could use a distributed ledger to improve the traceability of passenger and booking records.",
+    delivered: "Prepared a blockchain-based reservation model and supporting chain examples to demonstrate passenger and booking data operations. This is presented as a technical model, not a production deployment.",
+    stack: ["Blockchain", "Distributed Ledger", "System Design"],
+  },
+  {
+    coverIndex: 12,
+    title: "Food Delivery System — OOAD",
+    category: "Web & Systems",
+    tags: ["UML", "System Design"],
+    clientNeed: "The client needed a clear system design for a food delivery service connecting customers, restaurants, delivery staff and administrators.",
+    delivered: "Produced an object-oriented analysis and design package with UML views and workflows that explain the main roles, order lifecycle and system interactions.",
+    stack: ["OOAD", "UML", "Requirements Analysis"],
+  },
+  {
+    coverIndex: 13,
+    title: "Web Application Security Assessment",
+    category: "Web & Systems",
+    tags: ["Cybersecurity", "Security Testing"],
+    clientNeed: "The client wanted an initial review of a web server to identify potentially exposed files, outdated software and common configuration weaknesses.",
+    delivered: "Conducted and documented a Nikto-based web server scan, explaining the findings and the security checks that should be addressed.",
+    stack: ["Nikto", "Web Security", "Security Assessment"],
+  },
+  {
+    coverIndex: 14,
+    title: "LAGHATTI — Language Learning UX Platform",
+    category: "Design & UX",
+    tags: ["UX Research", "Figma"],
+    clientNeed: "The client wanted a more engaging way for learners to study languages using multimedia, games and opportunities to interact with teachers and other learners.",
+    delivered: "Developed the UX research and design direction, including personas, user journeys, user flows, storyboards, wireframes and a high-fidelity prototype concept.",
+    stack: ["UX Research", "Figma", "User Flows", "Wireframes", "Prototyping"],
+  },
+  {
+    coverIndex: 15,
+    title: "Sadaf — Abaya Brand Identity",
+    category: "Design & UX",
+    tags: ["Brand Identity", "Fashion"],
+    clientNeed: "The fashion brand needed a recognisable visual identity suitable for presenting its abaya collection and communicating with customers.",
+    delivered: "Created a coordinated identity package with logo artwork, fashion-focused brand visuals and supporting customer-facing materials such as a thank-you card and QR elements.",
+    stack: ["Brand Identity", "Logo Design", "Graphic Design"],
+  },
+  {
+    coverIndex: 16,
+    title: "Mavi — Shopping Brand Logo",
+    category: "Design & UX",
+    tags: ["Logo", "Branding"],
+    clientNeed: "The client wanted a clear, memorable logo for a shopping brand that communicates retail and delivery at a glance.",
+    delivered: "Designed a blue-toned wordmark incorporating a shopping-cart symbol to make the brand purpose immediately recognisable.",
+    stack: ["Logo Design", "Branding", "Visual Design"],
+  },
+  {
+    coverIndex: 17,
+    title: "Ruwahi Transport — Weekly Transfer Ad",
+    category: "Design & UX",
+    tags: ["Advertising", "Social Media"],
+    clientNeed: "The transport provider needed a promotional graphic that communicates its weekly transfer service, route and price clearly to prospective customers.",
+    delivered: "Designed an Arabic promotional advertisement featuring the bus, service information, price and contact details in a direct social-media-ready layout.",
+    stack: ["Graphic Design", "Advertising", "Arabic Layout"],
+  },
+  {
+    coverIndex: 18,
+    title: "Hospital Trainee ID Cards",
+    category: "Design & UX",
+    tags: ["Identity Design", "Print"],
+    clientNeed: "The hospital needed trainee identification cards that make the holder's name, department and trainee status easy to recognise.",
+    delivered: "Prepared a set of hospital trainee ID card layouts with institutional identification, department and individual details.",
+    stack: ["ID Card Design", "Print Design", "Layout"],
+  },
+  {
+    coverIndex: 19,
+    title: "Ibn Manzur — Arabic Cultural Poster",
+    category: "Design & UX",
+    tags: ["Poster", "Arabic Typography"],
+    clientNeed: "The client wanted an informative visual piece introducing the Arabic scholar Ibn Manzur in an engaging and culturally appropriate style.",
+    delivered: "Designed an Arabic-language cultural poster combining a portrait, editorial text and a clear visual hierarchy.",
+    stack: ["Poster Design", "Arabic Typography", "Editorial Layout"],
+  },
+  {
+    coverIndex: 20,
+    title: "Arabic Wedding Invitation",
+    category: "Design & UX",
+    tags: ["Invitation", "Print Design"],
+    clientNeed: "The client wanted an elegant Arabic wedding invitation that presents the event details in a refined, celebratory style.",
+    delivered: "Created an invitation layout with Arabic typography, ornamental floral details and the supplied date and venue information.",
+    stack: ["Invitation Design", "Arabic Typography", "Graphic Design"],
+  },
+  {
+    coverIndex: 21,
+    title: "Remote Work & Software Team Productivity Research",
+    category: "Research",
+    tags: ["Research", "Machine Learning"],
+    clientNeed: "The client wanted to examine how remote and office-based work relate to productivity, collaboration, satisfaction and stress in software development teams.",
+    delivered: "Prepared a research analysis using a 5,000-response dataset and compared six machine-learning approaches. The report also documents the limitations of using synthetic data.",
+    stack: ["Python", "Machine Learning", "Statistical Analysis", "Research"],
   },
 ];
 

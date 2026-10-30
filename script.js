@@ -37,7 +37,7 @@ function renderAbout() {
 function renderStats() {
   document.getElementById("statCerts").textContent = certificates.length;
   const freelanceCount = freelanceProjects.reduce((total, group) => total + group.cases.length, 0);
-  document.getElementById("statProjects").textContent = projects.length + freelanceCount;
+  document.getElementById("statProjects").textContent = projects.length + freelanceProjects.length;
   document.getElementById("statSkills").textContent = skills.length + "+";
 }
 
@@ -146,45 +146,76 @@ function renderProjects() {
 }
 
 /* ---------------- FREELANCE CLIENT PROJECTS ---------------- */
-function renderFreelanceProjects() {
-  const grid = document.getElementById("freelanceProjectsGrid");
-  const count = freelanceProjects.reduce((total, group) => total + group.cases.length, 0);
-  document.getElementById("freelanceCount").textContent = count;
+let activeFreelanceFilter = "All";
 
-  grid.innerHTML = freelanceProjects
-    .map(
-      (group) => `
+function renderFreelanceFilters() {
+  const categories = ["All", ...new Set(freelanceProjects.map((project) => project.category))];
+  const bar = document.getElementById("freelanceFilters");
+
+  bar.innerHTML = categories
+    .map((category) =>
+      `<button class="filter-btn ${category === activeFreelanceFilter ? "active" : ""}" data-category="${escapeHTML(category)}">${escapeHTML(category)}</button>`
+    )
+    .join("");
+
+  bar.querySelectorAll(".filter-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      activeFreelanceFilter = button.dataset.category;
+      renderFreelanceFilters();
+      renderFreelanceProjects();
+    });
+  });
+}
+
+function renderFreelanceProjects() {
+  renderFreelanceFilters();
+  const grid = document.getElementById("freelanceProjectsGrid");
+  document.getElementById("freelanceCount").textContent = freelanceProjects.length;
+
+  const visibleProjects = activeFreelanceFilter === "All"
+    ? freelanceProjects
+    : freelanceProjects.filter((project) => project.category === activeFreelanceFilter);
+
+  grid.innerHTML = visibleProjects
+    .map((project) => {
+      const index = Math.max(0, Math.min(20, project.coverIndex - 1));
+      const column = index % 3;
+      const row = Math.floor(index / 3);
+      const x = column * 50;
+      const y = (row / 6) * 100;
+
+      return `
       <article class="project-card freelance-card">
+        <div class="freelance-photo"
+             role="img"
+             aria-label="${escapeHTML(project.title)} project preview"
+             style="background-position: ${x}% ${y}%"></div>
         <div class="project-top">
-          <h3 class="project-title">${escapeHTML(group.title)}</h3>
+          <h3 class="project-title">${escapeHTML(project.title)}</h3>
         </div>
         <div class="project-tags">
-          ${group.tags.map((tag) => `<span class="tag">${escapeHTML(tag)}</span>`).join("")}
+          <span class="tag">${escapeHTML(project.category)}</span>
+          ${project.tags.map((tag) => `<span class="tag">${escapeHTML(tag)}</span>`).join("")}
         </div>
-        <div class="freelance-case-list">
-          ${group.cases.map((project) => `
-            <div class="freelance-case">
-              <h4 class="freelance-case-title">${escapeHTML(project.title)}</h4>
-              <div class="freelance-details">
-                <div class="freelance-detail">
-                  <span class="freelance-detail-label">Client brief</span>
-                  <p>${escapeHTML(project.clientNeed)}</p>
-                </div>
-                <div class="freelance-detail">
-                  <span class="freelance-detail-label">What I delivered</span>
-                  <p>${escapeHTML(project.delivered)}</p>
-                </div>
-              </div>
-              <div class="project-stack">
-                ${project.stack.map((item) => `<span>${escapeHTML(item)}</span>`).join("")}
-              </div>
-            </div>`).join("")}
+        <div class="freelance-details">
+          <div class="freelance-detail">
+            <span class="freelance-detail-label">Client brief</span>
+            <p>${escapeHTML(project.clientNeed)}</p>
+          </div>
+          <div class="freelance-detail">
+            <span class="freelance-detail-label">What I delivered</span>
+            <p>${escapeHTML(project.delivered)}</p>
+          </div>
+        </div>
+        <div class="project-stack">
+          ${project.stack.map((item) => `<span>${escapeHTML(item)}</span>`).join("")}
         </div>
         <div class="project-footer">
-          <span class="project-highlight">${group.cases.length} ${group.cases.length === 1 ? "client project" : "related client projects"}</span>
+          <span class="project-highlight">Client project</span>
+          <span class="project-link">${String(project.coverIndex).padStart(2, "0")} / 21</span>
         </div>
-      </article>`
-    )
+      </article>`;
+    })
     .join("");
 }
 
