@@ -196,6 +196,9 @@ const projects = [
 const freelanceProjects = [
   {
     coverIndex: 1,
+    slug: "ai-recommendation-engine",
+    image: "assets/freelance/ai-recommendation-engine/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/ai-recommendation-engine",
     title: "AI Recommendation Engine",
     category: "AI & Data",
     tags: ["Machine Learning", "Personalization"],
@@ -205,6 +208,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 2,
+    slug: "university-ai-assistant",
+    image: "assets/freelance/university-ai-assistant/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/university-ai-assistant",
     title: "AI-Powered University Assistant",
     category: "Web & Systems",
     tags: ["AI Assistant", "Bilingual", "Education"],
@@ -214,6 +220,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 3,
+    slug: "qutas-queue-management",
+    image: "assets/freelance/qutas-queue-management/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/qutas-queue-management",
     title: "QUTAS — University Queue Management",
     category: "Web & Systems",
     tags: ["Queue Management", "Administration"],
@@ -223,6 +232,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 4,
+    slug: "online-library-management-portal",
+    image: "assets/freelance/online-library-management-portal/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/online-library-management-portal",
     title: "Online Library Management Portal",
     category: "Web & Systems",
     tags: ["Full-Stack", "Library"],
@@ -232,6 +244,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 5,
+    slug: "tablet-store-mobile-commerce-app",
+    image: "assets/freelance/tablet-store-mobile-commerce-app/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/tablet-store-mobile-commerce-app",
     title: "Tablet Store — Mobile Commerce App",
     category: "Web & Systems",
     tags: ["Mobile App", "E-commerce"],
@@ -241,6 +256,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 6,
+    slug: "online-courses-website",
+    image: "assets/freelance/online-courses-website/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/online-courses-website",
     title: "Online Courses Website",
     category: "Web & Systems",
     tags: ["Website", "Education"],
@@ -250,6 +268,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 7,
+    slug: "weather-prediction-ml",
+    image: "assets/freelance/weather-prediction-ml/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/weather-prediction-ml",
     title: "Weather Prediction Using Machine Learning",
     category: "AI & Data",
     tags: ["Prediction", "Machine Learning"],
@@ -259,6 +280,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 8,
+    slug: "store-sales-forecasting",
+    image: "assets/freelance/store-sales-forecasting/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/store-sales-forecasting",
     title: "Store Sales Forecasting & Analysis",
     category: "AI & Data",
     tags: ["Data Analysis", "Forecasting"],
@@ -268,6 +292,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 9,
+    slug: "online-shopping-database-design",
+    image: "assets/freelance/online-shopping-database-design/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/online-shopping-database-design",
     title: "Online Shopping Database Design",
     category: "Web & Systems",
     tags: ["Database", "SQL"],
@@ -277,6 +304,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 10,
+    slug: "future-home-rental-calculator",
+    image: "assets/freelance/future-home-rental-calculator/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/future-home-rental-calculator",
     title: "Future Home — Rental Cost Calculator",
     category: "Web & Systems",
     tags: ["Python", "Automation"],
@@ -286,6 +316,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 11,
+    slug: "blockchain-bus-reservation-model",
+    image: "assets/freelance/blockchain-bus-reservation-model/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/blockchain-bus-reservation-model",
     title: "Blockchain Bus Reservation Model",
     category: "Web & Systems",
     tags: ["Blockchain", "System Design"],
@@ -295,6 +328,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 12,
+    slug: "food-delivery-system-design",
+    image: "assets/freelance/food-delivery-system-design/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/food-delivery-system-design",
     title: "Food Delivery System — OOAD",
     category: "Web & Systems",
     tags: ["UML", "System Design"],
@@ -304,6 +340,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 13,
+    slug: "web-application-security-assessment",
+    image: "assets/freelance/web-application-security-assessment/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/web-application-security-assessment",
     title: "Web Application Security Assessment",
     category: "Web & Systems",
     tags: ["Cybersecurity", "Security Testing"],
@@ -313,6 +352,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 14,
+    slug: "laghatti-language-learning-ux",
+    image: "assets/freelance/laghatti-language-learning-ux/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/laghatti-language-learning-ux",
     title: "LAGHATTI — Language Learning UX Platform",
     category: "Design & UX",
     tags: ["UX Research", "Figma"],
@@ -322,6 +364,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 15,
+    slug: "sadaf-abaya-brand-identity",
+    image: "assets/freelance/sadaf-abaya-brand-identity/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/sadaf-abaya-brand-identity",
     title: "Sadaf — Abaya Brand Identity",
     category: "Design & UX",
     tags: ["Brand Identity", "Fashion"],
@@ -331,6 +376,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 16,
+    slug: "mavi-shopping-brand-logo",
+    image: "assets/freelance/mavi-shopping-brand-logo/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/mavi-shopping-brand-logo",
     title: "Mavi — Shopping Brand Logo",
     category: "Design & UX",
     tags: ["Logo", "Branding"],
@@ -340,6 +388,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 17,
+    slug: "ruwahi-weekly-transport-ad",
+    image: "assets/freelance/ruwahi-weekly-transport-ad/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/ruwahi-weekly-transport-ad",
     title: "Ruwahi Transport — Weekly Transfer Ad",
     category: "Design & UX",
     tags: ["Advertising", "Social Media"],
@@ -349,6 +400,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 18,
+    slug: "hospital-trainee-id-cards",
+    image: "assets/freelance/hospital-trainee-id-cards/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/hospital-trainee-id-cards",
     title: "Hospital Trainee ID Cards",
     category: "Design & UX",
     tags: ["Identity Design", "Print"],
@@ -358,6 +412,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 19,
+    slug: "ibn-manzur-arabic-cultural-poster",
+    image: "assets/freelance/ibn-manzur-arabic-cultural-poster/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/ibn-manzur-arabic-cultural-poster",
     title: "Ibn Manzur — Arabic Cultural Poster",
     category: "Design & UX",
     tags: ["Poster", "Arabic Typography"],
@@ -367,6 +424,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 20,
+    slug: "arabic-wedding-invitation",
+    image: "assets/freelance/arabic-wedding-invitation/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/arabic-wedding-invitation",
     title: "Arabic Wedding Invitation",
     category: "Design & UX",
     tags: ["Invitation", "Print Design"],
@@ -376,6 +436,9 @@ const freelanceProjects = [
   },
   {
     coverIndex: 21,
+    slug: "remote-work-productivity-research",
+    image: "assets/freelance/remote-work-productivity-research/cover.webp",
+    folder: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/remote-work-productivity-research",
     title: "Remote Work & Software Team Productivity Research",
     category: "Research",
     tags: ["Research", "Machine Learning"],

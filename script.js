@@ -178,18 +178,12 @@ function renderFreelanceProjects() {
 
   grid.innerHTML = visibleProjects
     .map((project) => {
-      const index = Math.max(0, Math.min(20, project.coverIndex - 1));
-      const column = index % 3;
-      const row = Math.floor(index / 3);
-      const x = column * 50;
-      const y = (row / 6) * 100;
-
       return `
       <article class="project-card freelance-card">
-        <div class="freelance-photo"
-             role="img"
-             aria-label="${escapeHTML(project.title)} project preview"
-             style="background-position: ${x}% ${y}%"></div>
+        <img class="freelance-photo"
+             src="${escapeHTML(project.image)}"
+             alt="${escapeHTML(project.title)} project preview"
+             loading="lazy">
         <div class="project-top">
           <h3 class="project-title">${escapeHTML(project.title)}</h3>
         </div>
@@ -212,7 +206,7 @@ function renderFreelanceProjects() {
         </div>
         <div class="project-footer">
           <span class="project-highlight">Client project</span>
-          <span class="project-link">${String(project.coverIndex).padStart(2, "0")} / 21</span>
+          <a class="project-link" href="${escapeHTML(project.folder)}" target="_blank" rel="noopener">view project files ↗</a>
         </div>
       </article>`;
     })

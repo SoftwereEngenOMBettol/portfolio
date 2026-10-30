@@ -343,3 +343,16 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 @media (max-width: 560px) {
   .freelance-card { padding: 20px; }
 }
+
+
+/* Freelance project previews — one dedicated file per project */
+.freelance-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  background: var(--surface-alt);
+}
