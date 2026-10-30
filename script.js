@@ -202,18 +202,18 @@ function renderFreelanceProjects() {
     : freelanceProjects.filter((project) => project.category === activeFreelanceFilter);
 
   grid.innerHTML = visibleProjects
-    .map((project) => {
-      return `
-      <article class="project-card freelance-card">
-        <img class="freelance-photo"
-             src="${escapeHTML(project.image)}"
-             alt="${escapeHTML(project.title)} project preview"
-             loading="lazy">
-        <div class="project-top">
-          <h3 class="project-title">${escapeHTML(project.title)}</h3>
+    .map((project) => `
+      <a class="project-card cert-card freelance-card"
+         href="${escapeHTML(project.folder)}"
+         target="_blank"
+         rel="noopener"
+         aria-label="Open project files for ${escapeHTML(project.title)}">
+        <div class="freelance-card-top">
+          <span class="cert-issuer">${escapeHTML(project.category)}</span>
+          <span class="freelance-open">open project ↗</span>
         </div>
-        <div class="project-tags">
-          <span class="tag">${escapeHTML(project.category)}</span>
+        <h3 class="cert-title">${escapeHTML(project.title)}</h3>
+        <div class="project-tags freelance-tags">
           ${project.tags.map((tag) => `<span class="tag">${escapeHTML(tag)}</span>`).join("")}
         </div>
         <div class="freelance-details">
@@ -229,12 +229,7 @@ function renderFreelanceProjects() {
         <div class="project-stack">
           ${project.stack.map((item) => `<span>${escapeHTML(item)}</span>`).join("")}
         </div>
-        <div class="project-footer">
-          <span class="project-highlight">Client project</span>
-          <a class="project-link" href="${escapeHTML(project.folder)}" target="_blank" rel="noopener">view project files ↗</a>
-        </div>
-      </article>`;
-    })
+      </a>`)
     .join("");
 }
 
