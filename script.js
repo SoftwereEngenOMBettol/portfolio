@@ -5,19 +5,45 @@
    ========================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
-  wireResumeLinks();
-  renderAbout();
-  renderStats();
-  typewriterRoles();
-  renderSkills();
-  renderProjects();
-  renderFreelanceProjects();
-  renderCertificates();
-  wireContact();
-  wireNav();
-  wireLightbox();
-  document.getElementById("year").textContent = new Date().getFullYear();
+  // Render each area independently so one bad item cannot blank the rest.
+  const tasks = [
+    ["resume links", wireResumeLinks],
+    ["about", renderAbout],
+    ["skills", renderSkills],
+    ["selected projects", renderProjects],
+    ["freelance projects", renderFreelanceProjects],
+    ["certificates", renderCertificates],
+    ["contact", wireContact],
+    ["navigation", wireNav],
+    ["certificate viewer", wireLightbox],
+    ["statistics", renderStats],
+    ["role animation", typewriterRoles],
+  ];
+
+  tasks.forEach(([section, render]) => {
+    try {
+      render();
+    } catch (error) {
+      reportRenderError(section, error);
+    }
+  });
+
+  try {
+    document.getElementById("year").textContent = new Date().getFullYear();
+  } catch (error) {
+    reportRenderError("footer", error);
+  }
 });
+
+function reportRenderError(section, error) {
+  console.error(`[Portfolio] ${section} failed to render:`, error);
+  const status = document.getElementById("runtimeStatus");
+  if (status) {
+    status.hidden = false;
+    status.textContent =
+      "Some portfolio content could not load. Please refresh this page. If the issue continues, share the first browser-console error.";
+  }
+}
 
 /* ---------------- RESUME / CV ---------------- */
 function wireResumeLinks() {
