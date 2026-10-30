@@ -356,3 +356,14 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   border-radius: 8px;
   background: var(--surface-alt);
 }
+
+
+/* Visible only when a portfolio script or section fails to load. */
+.runtime-status {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 12px 24px;
+  color: #ffd28a;
+  font-size: 0.78rem;
+}
+.runtime-status[hidden] { display: none; }
