@@ -129,15 +129,7 @@ const projects = [
     highlight: "",
     github: "https://github.com/SoftwereEngenOMBettol/weather-predictor",
   },
-  {
-    title: "Online Library Books",
-    tags: ["Full-Stack", "Web"],
-    stack: ["MongoDB", "Express", "React", "Node.js"],
-    description:
-      "Full-stack MERN application for managing an online library, including book records and borrowing.",
-    highlight: "",
-    github: "https://github.com/SoftwereEngenOMBettol/onlineLibraryBooks",
-  },
+
   {
     title: "Social Media App",
     tags: ["Full-Stack", "Web"],
@@ -147,15 +139,7 @@ const projects = [
     highlight: "",
     github: "https://github.com/SoftwereEngenOMBettol/social-media-app",
   },
-  {
-    title: "Caffeine — Cafe Shop Website",
-    tags: ["Web"],
-    stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
-    description:
-      "A complete e-commerce platform for a coffee shop: user registration, an automated ordering pipeline, and an admin panel.",
-    highlight: "",
-    github: "",
-  },
+
   {
     title: "QUTAS — University Queue Management System",
     tags: ["Web", "Systems"],
@@ -165,15 +149,7 @@ const projects = [
     highlight: "",
     github: "",
   },
-  {
-    title: "Tablet Store — E-commerce App",
-    tags: ["Mobile"],
-    stack: ["Flutter", "Dart", "Firebase Firestore", "Firebase Auth"],
-    description:
-      "Cross-platform mobile app for tablet sales, with an interactive shopping cart, secure checkout, and persistent order history.",
-    highlight: "",
-    github: "",
-  },
+
   {
     title: "Electronic Store System — UX Design",
     tags: ["UI/UX"],
@@ -182,6 +158,50 @@ const projects = [
       "A UX design project focused on creating a usable, intuitive interface for an electronic store, from research through high-fidelity prototype.",
     highlight: "",
     github: "",
+  },
+];
+
+
+/* ---------------- FREELANCE CLIENT PROJECTS ----------------
+   Related commerce builds are grouped together to keep the
+   client-work section focused without counting either project twice.
+   ---------------------------------------------------------- */
+const freelanceProjects = [
+  {
+    title: "Commerce & Retail Applications",
+    tags: ["E-commerce", "Web", "Mobile"],
+    cases: [
+      {
+        title: "Caffeine — Cafe Shop Website",
+        clientNeed:
+          "The cafe needed an online ordering channel so customers could place requests without relying on a manual, staff-handled process.",
+        delivered:
+          "Built a web-based ordering experience with customer registration, an automated order workflow, and an admin panel for managing the service.",
+        stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+      },
+      {
+        title: "Tablet Store Mobile App",
+        clientNeed:
+          "The retailer needed a mobile storefront for presenting tablet products, managing the catalogue, and giving customers a straightforward shopping flow.",
+        delivered:
+          "Built a Flutter app with Firebase sign-up and login, a Firestore-backed product catalogue, admin product management, a shopping cart, checkout flow, and purchase history.",
+        stack: ["Flutter", "Dart", "Firebase Auth", "Cloud Firestore"],
+      },
+    ],
+  },
+  {
+    title: "Library Management Portal",
+    tags: ["Full-Stack", "Web", "Management System"],
+    cases: [
+      {
+        title: "Online Library Books",
+        clientNeed:
+          "The library needed a public website where visitors could explore its book catalogue, alongside an admin area to keep book records up to date.",
+        delivered:
+          "Built a React-based library website with book listings, admin sign-in, add/edit/manage book workflows, and a Node.js/Express API connected to MongoDB.",
+        stack: ["React", "Node.js", "Express", "MongoDB"],
+      },
+    ],
   },
 ];
 

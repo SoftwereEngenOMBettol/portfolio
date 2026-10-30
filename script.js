@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   typewriterRoles();
   renderSkills();
   renderProjects();
+  renderFreelanceProjects();
   renderCertificates();
   wireContact();
   wireNav();
@@ -35,7 +36,8 @@ function renderAbout() {
 
 function renderStats() {
   document.getElementById("statCerts").textContent = certificates.length;
-  document.getElementById("statProjects").textContent = projects.length;
+  const freelanceCount = freelanceProjects.reduce((total, group) => total + group.cases.length, 0);
+  document.getElementById("statProjects").textContent = projects.length + freelanceCount;
   document.getElementById("statSkills").textContent = skills.length + "+";
 }
 
@@ -137,6 +139,49 @@ function renderProjects() {
               ? `<a class="project-link" href="${p.github}" target="_blank" rel="noopener">view repo →</a>`
               : `<span class="project-link" style="opacity:.4">private</span>`
           }
+        </div>
+      </article>`
+    )
+    .join("");
+}
+
+/* ---------------- FREELANCE CLIENT PROJECTS ---------------- */
+function renderFreelanceProjects() {
+  const grid = document.getElementById("freelanceProjectsGrid");
+  const count = freelanceProjects.reduce((total, group) => total + group.cases.length, 0);
+  document.getElementById("freelanceCount").textContent = count;
+
+  grid.innerHTML = freelanceProjects
+    .map(
+      (group) => `
+      <article class="project-card freelance-card">
+        <div class="project-top">
+          <h3 class="project-title">${escapeHTML(group.title)}</h3>
+        </div>
+        <div class="project-tags">
+          ${group.tags.map((tag) => `<span class="tag">${escapeHTML(tag)}</span>`).join("")}
+        </div>
+        <div class="freelance-case-list">
+          ${group.cases.map((project) => `
+            <div class="freelance-case">
+              <h4 class="freelance-case-title">${escapeHTML(project.title)}</h4>
+              <div class="freelance-details">
+                <div class="freelance-detail">
+                  <span class="freelance-detail-label">Client brief</span>
+                  <p>${escapeHTML(project.clientNeed)}</p>
+                </div>
+                <div class="freelance-detail">
+                  <span class="freelance-detail-label">What I delivered</span>
+                  <p>${escapeHTML(project.delivered)}</p>
+                </div>
+              </div>
+              <div class="project-stack">
+                ${project.stack.map((item) => `<span>${escapeHTML(item)}</span>`).join("")}
+              </div>
+            </div>`).join("")}
+        </div>
+        <div class="project-footer">
+          <span class="project-highlight">${group.cases.length} ${group.cases.length === 1 ? "client project" : "related client projects"}</span>
         </div>
       </article>`
     )
