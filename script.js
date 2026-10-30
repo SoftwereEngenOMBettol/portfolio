@@ -36,7 +36,6 @@ function renderAbout() {
 
 function renderStats() {
   document.getElementById("statCerts").textContent = certificates.length;
-  const freelanceCount = freelanceProjects.reduce((total, group) => total + group.cases.length, 0);
   document.getElementById("statProjects").textContent = projects.length + freelanceProjects.length;
   document.getElementById("statSkills").textContent = skills.length + "+";
 }
