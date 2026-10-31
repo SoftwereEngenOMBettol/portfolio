@@ -1,6 +1,6 @@
 # Online Courses Website
 
-![Online Courses Website preview](cover.webp)
+![Online Courses Website preview](online-courses-home-page.png)
 
 ## Project overview
 
