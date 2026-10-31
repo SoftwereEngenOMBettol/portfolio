@@ -10,6 +10,7 @@ A database design covering customer, order and shopping records, with SQL schema
 
 SQL, Relational Database Design
 
-## Portfolio note
+## Project files
 
-This folder contains the project preview image and a short project summary. It is intended as a public portfolio reference.
+- `online-shopping-database-design-report.pdf` — database schema and SQL assignment.
+- `cover.webp` — portfolio preview.
