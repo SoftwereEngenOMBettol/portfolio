@@ -162,7 +162,7 @@ function renderProjects() {
           ${
             p.github
               ? `<a class="project-link" href="${p.github}" target="_blank" rel="noopener">view repo →</a>`
-              : `<span class="project-link" style="opacity:.4">private</span>`
+              : ""
           }
         </div>
       </article>`
