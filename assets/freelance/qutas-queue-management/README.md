@@ -10,6 +10,7 @@ A virtual ticket and queue-status system for Student Affairs, with an administra
 
 PHP, MySQL, HTML, CSS, JavaScript
 
-## Portfolio note
+## Project files
 
-This folder contains the project preview image and a short project summary. It is intended as a public portfolio reference.
+- `qutas-queue-management-report.pdf` — the diploma project report.
+- `cover.webp` — portfolio preview.
