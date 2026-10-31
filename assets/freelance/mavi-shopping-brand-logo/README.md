@@ -10,6 +10,7 @@ A blue-toned shopping brand logo combining a wordmark and a shopping-cart symbol
 
 Logo Design, Branding, Visual Design
 
-## Portfolio note
+## Project files
 
-This folder contains the project preview image and a short project summary. It is intended as a public portfolio reference.
+- `mavi-shopping-brand-logo.png` — original logo artwork.
+- `cover.webp` — portfolio preview.
