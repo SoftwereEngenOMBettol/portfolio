@@ -202,34 +202,37 @@ function renderFreelanceProjects() {
     : freelanceProjects.filter((project) => project.category === activeFreelanceFilter);
 
   grid.innerHTML = visibleProjects
-    .map((project) => `
-      <a class="project-card cert-card freelance-card"
-         href="${escapeHTML(project.folder)}"
-         target="_blank"
-         rel="noopener"
-         aria-label="Open project files for ${escapeHTML(project.title)}">
-        <div class="freelance-card-top">
-          <span class="cert-issuer">${escapeHTML(project.category)}</span>
-          <span class="freelance-open">open project ↗</span>
+    .map((p) => `
+      <article class="project-card freelance-card">
+        <div class="project-top">
+          <h3 class="project-title">${escapeHTML(p.title)}</h3>
         </div>
-        <h3 class="cert-title">${escapeHTML(project.title)}</h3>
-        <div class="project-tags freelance-tags">
-          ${project.tags.map((tag) => `<span class="tag">${escapeHTML(tag)}</span>`).join("")}
+        <div class="project-tags">
+          <span class="tag">${escapeHTML(p.category)}</span>
+          ${p.tags.map((tag) => `<span class="tag">${escapeHTML(tag)}</span>`).join("")}
         </div>
         <div class="freelance-details">
           <div class="freelance-detail">
             <span class="freelance-detail-label">Client brief</span>
-            <p>${escapeHTML(project.clientNeed)}</p>
+            <p>${escapeHTML(p.clientNeed)}</p>
           </div>
           <div class="freelance-detail">
             <span class="freelance-detail-label">What I delivered</span>
-            <p>${escapeHTML(project.delivered)}</p>
+            <p>${escapeHTML(p.delivered)}</p>
           </div>
         </div>
         <div class="project-stack">
-          ${project.stack.map((item) => `<span>${escapeHTML(item)}</span>`).join("")}
+          ${p.stack.map((item) => `<span>${escapeHTML(item)}</span>`).join("")}
         </div>
-      </a>`)
+        <div class="project-footer">
+          <span class="project-highlight">${escapeHTML(p.highlight || "Client project")}</span>
+          ${
+            p.github
+              ? `<a class="project-link" href="${escapeHTML(p.github)}" target="_blank" rel="noopener">${escapeHTML(p.linkLabel || "view project →")}</a>`
+              : `<span class="project-link" style="opacity:.4">private</span>`
+          }
+        </div>
+      </article>`)
     .join("");
 }
 
