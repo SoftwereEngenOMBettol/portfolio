@@ -10,6 +10,7 @@ An Arabic wedding invitation layout with decorative elements, event details and 
 
 Invitation Design, Arabic Typography, Graphic Design
 
-## Portfolio note
+## Project files
 
-This folder contains the project preview image and a short project summary. It is intended as a public portfolio reference.
+- `arabic-wedding-invitation.png` — original invitation design.
+- `cover.webp` — portfolio preview.
