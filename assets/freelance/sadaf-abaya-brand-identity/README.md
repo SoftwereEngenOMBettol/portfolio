@@ -10,6 +10,9 @@ A coordinated brand identity package for an abaya label, including logo artwork 
 
 Brand Identity, Logo Design, Graphic Design
 
-## Portfolio note
+## Project files
 
-This folder contains the project preview image and a short project summary. It is intended as a public portfolio reference.
+- `sadaf-brand-identity-deliverables.zip` — supporting brand materials.
+- `sadaf-abaya-collection-designs.zip` — abaya collection design files.
+- `sadaf-gulf-abaya-designs.zip` — Gulf abaya design files.
+- `cover.webp` — portfolio preview.
