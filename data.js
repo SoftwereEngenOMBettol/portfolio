@@ -93,7 +93,7 @@ const projects = [
     description:
       "Final year project: a bilingual (Arabic/English) AI assistant integrated with the university's CIMS system, letting students fetch GPA, schedule and attendance. Includes an admin dashboard with AI-generated FAQs.",
     highlight: "92% user satisfaction",
-    github: "",
+    github: "https://github.com/SoftwereEngenOMBettol/utas-ibra-assistant",
   },
   {
     title: "Stock Price Predictor",
@@ -102,7 +102,7 @@ const projects = [
     description:
       "A machine-learning powered web application that predicts stock prices from historical market data.",
     highlight: "",
-    github: "https://github.com/SoftwereEngenOMBettol/stock-price-predictor",
+    github: "",
   },
   {
     title: "Sales Forecasting App",
@@ -111,7 +111,7 @@ const projects = [
     description:
       "Helps businesses predict future revenue and optimize sales strategy from historical sales data.",
     highlight: "",
-    github: "https://github.com/SoftwereEngenOMBettol/sales-forecasting-app",
+    github: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/store-sales-forecasting",
   },
   {
     title: "Health Risk Assessor",
@@ -119,7 +119,7 @@ const projects = [
     stack: ["Python"],
     description: "A tool that evaluates health risk factors from user input data.",
     highlight: "",
-    github: "https://github.com/SoftwereEngenOMBettol/health-risk-assessor",
+    github: "",
   },
   {
     title: "Weather Predictor",
@@ -127,7 +127,7 @@ const projects = [
     stack: ["Python"],
     description: "A Python application for predicting weather conditions.",
     highlight: "",
-    github: "https://github.com/SoftwereEngenOMBettol/weather-predictor",
+    github: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/weather-prediction-ml",
   },
 
   {
@@ -137,7 +137,7 @@ const projects = [
     description:
       "Full-stack MERN application for managing an online library, including book records and borrowing.",
     highlight: "",
-    github: "https://github.com/SoftwereEngenOMBettol/onlineLibraryBooks",
+    github: "https://github.com/SoftwereEngenOMBettol/LibraryBooks",
   },
   {
     title: "Social Media App",
@@ -156,7 +156,7 @@ const projects = [
     description:
       "A complete e-commerce platform for a coffee shop: user registration, an automated ordering pipeline, and an admin panel.",
     highlight: "",
-    github: "",
+    github: "https://github.com/SoftwereEngenOMBettol/caffeine-cafe",
   },
   {
     title: "QUTAS — University Queue Management System",
@@ -165,7 +165,7 @@ const projects = [
     description:
       "A virtual ticketing system built for the Student Affairs department to manage queues, with real-time status updates and an admin control panel.",
     highlight: "",
-    github: "",
+    github: "https://github.com/SoftwereEngenOMBettol/portfolio/tree/main/assets/freelance/qutas-queue-management",
   },
 
   {
@@ -175,7 +175,7 @@ const projects = [
     description:
       "Cross-platform mobile app for tablet sales, with an interactive shopping cart, secure checkout, and persistent order history.",
     highlight: "",
-    github: "",
+    github: "https://github.com/SoftwereEngenOMBettol/tablet_store",
   },
   {
     title: "Electronic Store System — UX Design",
