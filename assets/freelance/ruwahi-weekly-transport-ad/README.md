@@ -10,6 +10,7 @@ An Arabic promotional graphic presenting a weekly transport service with its rou
 
 Graphic Design, Advertising, Arabic Layout
 
-## Portfolio note
+## Project files
 
-This folder contains the project preview image and a short project summary. It is intended as a public portfolio reference.
+- `ruwahi-weekly-transport-ad.png` — original Arabic weekly-transfer advertisement.
+- `cover.webp` — portfolio preview.
