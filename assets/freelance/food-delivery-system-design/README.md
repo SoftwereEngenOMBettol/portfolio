@@ -10,6 +10,7 @@ An object-oriented system design package outlining customers, restaurants, deliv
 
 OOAD, UML, Requirements Analysis
 
-## Portfolio note
+## Project files
 
-This folder contains the project preview image and a short project summary. It is intended as a public portfolio reference.
+- `food-delivery-system-ooad-presentation.pptx` — the OOAD presentation.
+- `cover.webp` — portfolio preview.
