@@ -10,6 +10,7 @@ An Arabic cultural poster introducing Ibn Manzur through portraiture, editorial 
 
 Poster Design, Arabic Typography, Editorial Layout
 
-## Portfolio note
+## Project files
 
-This folder contains the project preview image and a short project summary. It is intended as a public portfolio reference.
+- `ibn-manzur-arabic-cultural-poster.png` — original Arabic cultural poster.
+- `cover.webp` — portfolio preview.
