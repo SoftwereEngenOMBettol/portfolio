@@ -10,6 +10,9 @@ An analysis of sales and profitability patterns, with exploratory visualisation 
 
 Python, Pandas, Data Analysis, Linear Regression
 
-## Portfolio note
+## Project files
 
-This folder contains the project preview image and a short project summary. It is intended as a public portfolio reference.
+- `store-sales-forecasting-report.pdf` — analysis report.
+- `store-sales-forecasting-analysis.ipynb` — analysis notebook.
+- `store-sales-forecasting-dataset.csv` — dataset used in the analysis.
+- `cover.webp` — portfolio preview.
