@@ -1,0 +1,196 @@
+// ACL file 
+rule SystemACL {
+    description: "System administrators can do everything"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "org.hyperledger.composer.system.**"
+    action: ALLOW
+}
+
+rule NetworkAdminFullAccess {
+    description: "Network administrators full access"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "org.example.bus.*"
+    action: ALLOW
+}
+
+rule PassengerAccess {
+    description: "Passengers can read all"
+    participant: "org.example.bus.Passenger"
+    operation: READ
+    resource: "org.example.bus.*"
+    action: ALLOW
+}
+
+rule PassengerManageOwnData {
+    description: "Passengers can manage own data"
+    participant(p): "org.example.bus.Passenger"
+    operation: READ, UPDATE
+    resource(v): "org.example.bus.Passenger"
+    condition: (v.getIdentifier() == p.getIdentifier())
+    action: ALLOW
+}
+
+
+//Logic file 
+
+
+/**
+ * Add a new passenger
+ * @param {org.example.bus.AddPassenger} addPassenger - the transaction
+ * @transaction
+ */
+async function addPassenger(addPassenger) {
+    const factory = getFactory();
+    
+    const parRegistry = await getParticipantRegistry('org.example.bus.Passenger');
+    
+    const newPassenger = factory.newResource('org.example.bus','Passenger', addPassenger.passengerId);
+    newPassenger.name = addPassenger.name;
+    newPassenger.email = addPassenger.email;
+    newPassenger.phoneNumber = addPassenger.phoneNumber;
+    
+    await parRegistry.add(newPassenger);
+}
+
+/**
+ * Modify passenger details
+ * @param {org.example.bus.ModifyPassenger} modifyPassenger - the transaction
+ * @transaction
+ */
+async function modifyPassenger(modifyPassenger) {
+    const parRegistry = await getParticipantRegistry('org.example.bus.Passenger');
+    
+	const passenger = await parRegistry.get(modifyPassenger.passengerId);
+    passenger.name = modifyPassenger.name;
+    passenger.email = modifyPassenger.email;
+    passenger.phoneNumber = modifyPassenger.phoneNumber;
+    
+    await parRegistry.update(passenger);
+}
+
+
+//model file 
+
+/**
+ * Bus Reservation System
+ */
+namespace org.example.bus
+
+asset Bus identified by busId {
+  o String busId
+  o String busNumber
+  o String company
+  o String source
+  o String destination
+}
+
+participant Passenger identified by passengerId {
+  o String passengerId
+  o String name
+  o String email
+  o String phoneNumber
+}
+
+asset Booking identified by bookingId {
+  o String bookingId
+  --> Passenger passenger
+  --> Bus bus
+  o String bookingStatus
+}
+
+transaction AddPassenger {
+  o String passengerId
+  o String name
+  o String email
+  o String phoneNumber
+}
+
+transaction ModifyPassenger {
+  --> Passenger passenger
+  o String name
+  o String email
+  o String phoneNumber
+}
+
+
+
+
+
+
+//queries.qry
+
+/**
+ * Bus Reservation System Queries
+ */
+
+// Query 1: Get all available buses (with seats)
+query selectAvailableBuses {
+  description: "Select all buses with available seats"
+  statement:
+    SELECT org.example.bus.Bus
+      ORDER BY [source ASC, destination ASC]
+}
+
+// Query 2: Get buses by route
+query selectBusesByRoute {
+  description: "Select buses by source and destination"
+  statement:
+    SELECT org.example.bus.Bus
+      WHERE (source == _$source AND destination == _$destination)
+  
+}
+
+// Query 3: Get all passengers
+query selectAllPassengers {
+  description: "Select all passengers"
+  statement:
+    SELECT org.example.bus.Passenger
+      ORDER BY [name ASC]
+}
+
+// Query 4: Get passenger by email
+query selectPassengerByEmail {
+  description: "Select passenger by email address"
+  statement:
+    SELECT org.example.bus.Passenger
+      WHERE (email == _$email)
+}
+
+// Query 5: Get all bookings
+query selectAllBookings {
+  description: "Select all bookings"
+  statement:
+    SELECT org.example.bus.Booking
+      ORDER BY [bookingId DESC]
+}
+
+// Query 6: Get bookings for a specific passenger
+query selectBookingsByPassenger {
+  description: "Select all bookings for a specific passenger"
+  statement:
+    SELECT org.example.bus.Booking
+      WHERE (passenger.getIdentifier() == _$passengerId)
+      ORDER BY [bookingId DESC]
+}
+
+// Query 7: Get bookings for a specific bus
+query selectBookingsByBus {
+  description: "Select all bookings for a specific bus"
+  statement:
+    SELECT org.example.bus.Booking
+      WHERE (bus.getIdentifier() == _$busId)
+      ORDER BY [bookingId DESC]
+}
+
+// Query 8: Get confirmed bookings only
+query selectConfirmedBookings {
+  description: "Select only confirmed bookings"
+  statement:
+    SELECT org.example.bus.Booking
+      WHERE (bookingStatus == 'CONFIRMED')
+      ORDER BY [bookingId DESC]
+}
+
+
