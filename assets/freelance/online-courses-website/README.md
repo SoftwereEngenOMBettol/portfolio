@@ -10,6 +10,9 @@ A multi-page course website introducing available courses and providing enrolmen
 
 HTML, CSS, Web Design
 
-## Portfolio note
+## Project files
 
-This folder contains the project preview image and a short project summary. It is intended as a public portfolio reference.
+- `online-courses-home-page.png` — home page.
+- `online-courses-catalog-page.png` — course catalogue page.
+- `online-courses-payment-page.png` — payment page.
+- `cover.webp` — portfolio preview.
