@@ -10,6 +10,7 @@ A bilingual assistant connected to university academic records, with authenticat
 
 React, FastAPI, Gemini AI, PostgreSQL, JWT
 
-## Portfolio note
+## Project files
 
-This folder contains the project preview image and a short project summary. It is intended as a public portfolio reference.
+- `university-ai-assistant-report.pdf` — the bachelor project report.
+- `cover.webp` — portfolio preview.
